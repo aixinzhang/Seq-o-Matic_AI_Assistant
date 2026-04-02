@@ -4,7 +4,7 @@
 
 An intelligent agent that can answer questions about hardware, software, and troubleshooting -- and optionally control lab equipment via natural language.
 
-![Agent Demo](agent/agent_demo.png)
+![Agent Demo](agent_demo.png)
 
 ---
 
