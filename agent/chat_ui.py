@@ -2,21 +2,21 @@
 Seq-o-Matic AI Assistant -- Chat UI
 
 A Tkinter-based chat interface with logo, message history,
-and save/clear functionality.
+save/clear functionality, and hardware control with confirmation dialogs.
 
 Usage:
     python chat_ui.py
 """
 
 import tkinter as tk
-from tkinter import scrolledtext, END
+from tkinter import scrolledtext, messagebox, END
 import threading
 import os
 
 from PIL import Image, ImageTk
 
 from agents import software_agent, hardware_agent, clear_history, save_last_qa
-from orchestrator import classify
+from orchestrator import classify, control_agent
 
 
 class ChatUI:
@@ -42,7 +42,6 @@ class ChatUI:
         logo_path = os.path.join(os.path.dirname(__file__), "..", "project_logo.png")
         if os.path.exists(logo_path):
             img = Image.open(logo_path)
-            # Resize to reasonable height, keep aspect ratio
             max_height = 100
             ratio = max_height / img.height
             new_size = (int(img.width * ratio), max_height)
@@ -58,7 +57,7 @@ class ChatUI:
         title_label.pack(pady=(5, 0))
 
         subtitle_label = tk.Label(
-            logo_frame, text="Ask about hardware, software, or troubleshooting",
+            logo_frame, text="Ask questions OR control hardware with natural language",
             font=("Arial", 10), bg="#f0f0f0", fg="#666666"
         )
         subtitle_label.pack()
@@ -79,6 +78,7 @@ class ChatUI:
         self.chat_display.tag_config("assistant", foreground="#333333", font=("Consolas", 10))
         self.chat_display.tag_config("system", foreground="#888888", font=("Consolas", 9, "italic"))
         self.chat_display.tag_config("category", foreground="#e67e22", font=("Consolas", 9))
+        self.chat_display.tag_config("confirm", foreground="#27ae60", font=("Consolas", 9, "bold"))
 
         # --- Input area ---
         input_frame = tk.Frame(self.root, bg="#f0f0f0")
@@ -115,7 +115,6 @@ class ChatUI:
         )
         clear_btn.pack(side=tk.LEFT, padx=(0, 5))
 
-        # Status label
         self.status_label = tk.Label(
             btn_frame, text="Ready", font=("Arial", 9),
             bg="#f0f0f0", fg="#888888",
@@ -135,6 +134,14 @@ class ChatUI:
         self.chat_display.config(state=tk.DISABLED)
         self.chat_display.see(END)
 
+    def _gui_confirm(self, action_text):
+        """Show a confirmation dialog for hardware actions. Returns True/False."""
+        result = messagebox.askyesno(
+            "Confirm Hardware Action",
+            f"The agent wants to execute:\n\n{action_text}\n\nProceed?",
+        )
+        return result
+
     def _on_send(self):
         """Handle send button click."""
         question = self.input_field.get().strip()
@@ -144,11 +151,9 @@ class ChatUI:
         self.input_field.delete(0, END)
         self._append_message("You", question, "user")
 
-        # Show thinking status
         self.status_label.config(text="Thinking...", fg="#e67e22")
         self.root.update()
 
-        # Run in background thread to keep UI responsive
         thread = threading.Thread(target=self._process_question, args=(question,))
         thread.start()
 
@@ -158,7 +163,10 @@ class ChatUI:
             category = classify(question)
             self.root.after(0, self._append_message, "", f"[{category}]", "category")
 
-            if category == "hardware":
+            if category == "control":
+                # Hardware control with GUI confirmation dialog
+                answer = control_agent(question, confirm_fn=self._gui_confirm_from_thread)
+            elif category == "hardware":
                 answer = hardware_agent(question)
             elif category == "software":
                 answer = software_agent(question)
@@ -178,6 +186,22 @@ class ChatUI:
                 error_msg = "API key not set. Set ANTHROPIC_API_KEY environment variable first."
             self.root.after(0, self._append_message, "Error", error_msg, "system")
             self.root.after(0, self.status_label.config, {"text": "Error", "fg": "#e74c3c"})
+
+    def _gui_confirm_from_thread(self, action_text):
+        """Thread-safe confirmation dialog. Runs messagebox on the main thread."""
+        import queue
+        result_queue = queue.Queue()
+
+        def show_dialog():
+            result = messagebox.askyesno(
+                "Confirm Hardware Action",
+                f"The agent wants to execute:\n\n{action_text}\n\nProceed?",
+            )
+            result_queue.put(result)
+
+        self.root.after(0, show_dialog)
+        # Block this background thread until user responds
+        return result_queue.get()
 
     def _on_save(self):
         """Save the last Q&A to knowledge base."""
