@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep:*)",
+      "Bash(python -c \"import py_compile; py_compile.compile\\(''code/system/image_acquisition_and_analysis_system.py'', doraise=True\\)\")",
+      "Bash(python3 -c \"import ast; ast.parse\\(open\\(''code/system/image_acquisition_and_analysis_system.py''\\).read\\(\\)\\); print\\(''Syntax OK''\\)\")",
+      "Bash(py -c \"import ast; ast.parse\\(open\\(''code/system/image_acquisition_and_analysis_system.py''\\).read\\(\\)\\); print\\(''Syntax OK''\\)\")",
+      "Bash(python -c \"import py_compile; py_compile.compile\\(''code/front_end/Widgets.py'', doraise=True\\)\")",
+      "Bash(ls /c/Python*/python.exe)",
+      "Read(//c/Users/**)",
+      "Bash(\"/c/Users/aixin.zhang/AppData/Local/Programs/Python/Python310/python.exe\" -c \"import py_compile; py_compile.compile\\(r'E:/Seq_o_matics_2.5/code/front_end/Widgets.py', doraise=True\\)\" 2>&1)",
+      "Bash(wc -l \"E:/Seq_o_matics_2.5/code/system/imaging/\"*.py)",
+      "Bash(wc -l \"E:/Seq_o_matics_2.5/code/front_end/panels/\"*.py)",
+      "Bash(python -c \"import py_compile; py_compile.compile\\(''front_end/Widgets.py'', doraise=True\\)\")",
+      "Bash(python3 -c \"import py_compile; py_compile.compile\\(''front_end/Widgets.py'', doraise=True\\)\")",
+      "Bash(py -c \"import py_compile; py_compile.compile\\(''front_end/Widgets.py'', doraise=True\\)\")",
+      "Bash(where py:*)",
+      "Bash(py -c \":*)",
+      "Bash(python:*)",
+      "Bash(python3 -c \"import os; p1 = os.path.normpath\\(os.path.join\\(''E:/Seq_o_matics_2.5/code/supplementary/package/pycromanager/pycromanager'', ''..'', ''..'', ''ndtiff''\\)\\); p2 = os.path.normpath\\(os.path.join\\(''E:/Seq_o_matics_2.5/code/supplementary/package/pycromanager/pycromanager/acquisition'', ''..'', ''..'', ''..'', ''ndtiff''\\)\\); print\\(''__init__.py resolves to:'', p1\\); print\\(''java_backend resolves to:'', p2\\)\")",
+      "Bash(mv ndtiff/ndtiff ndtiff_pkg)",
+      "Bash(rm -rf ndtiff)",
+      "Bash(mv ndtiff_pkg ndtiff)",
+      "Bash(mv pycromanager/pycromanager pycromanager_pkg)",
+      "Bash(rm -rf pycromanager)",
+      "Bash(mv pycromanager_pkg pycromanager)",
+      "Bash(cp -r code \"E:/Seq_o_matics_2.5_production/code\")",
+      "Bash(cp -r docs \"E:/Seq_o_matics_2.5_production/docs\")",
+      "Bash(cp README.md \"E:/Seq_o_matics_2.5_production/\")",
+      "Bash(cp pyproject.toml \"E:/Seq_o_matics_2.5_production/\")",
+      "Bash(cp setup.py \"E:/Seq_o_matics_2.5_production/\")",
+      "Bash(cp:*)"
+    ]
+  }
+}

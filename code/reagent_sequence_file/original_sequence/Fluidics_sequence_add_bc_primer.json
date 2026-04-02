@@ -1,0 +1,11 @@
+[{"volume":5,"source":"7","flow_rate":1.5,"time":null,"temperature":null,"Solution name":"FISH WASH","device":"pump"},
+{"volume":1,"source":"11","flow_rate":1.5,"time":null,"temperature":null,"Solution name":"bc primer mix","device":"pump"},
+{"volume":0,"source":null,"flow_rate":null,"time":600,"temperature":null,"Solution name":"bc primer mix incubation Wait","device":"wait"},
+{"volume":3,"source":"7","flow_rate":1.5,"time":null,"temperature":null,"Solution name":"FISH WASH","device":"pump"},
+{"volume":0,"source":null,"flow_rate":null,"time":120,"temperature":null,"Solution name":"FISH WASH Wait 1","device":"wait"},
+{"volume":1,"source":"7","flow_rate":1.5,"time":null,"temperature":null,"Solution name":"FISH WASH","device":"pump"},
+{"volume":0,"source":null,"flow_rate":null,"time":120,"temperature":null,"Solution name":"FISH WASH Wait 2","device":"wait"},
+{"volume":1,"source":"7","flow_rate":1.5,"time":null,"temperature":null,"Solution name":"FISH WASH","device":"pump"},
+{"volume":0,"source":null,"flow_rate":null,"time":120,"temperature":null,"Solution name":"FISH WASH Wait 3","device":"wait"},
+{"volume":2,"source":"2","flow_rate":1.5,"time":null,"temperature":null,"Solution name":"PBST Wash","device":"pump"},
+{"volume":0,"source":"14","flow_rate":null,"time":null,"temperature":null,"Solution name":"Empty End","device":"stopper"}]

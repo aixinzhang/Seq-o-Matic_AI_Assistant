@@ -1,0 +1,8 @@
+include README.md
+include requirements.txt
+include environment.yml
+recursive-include code/config_file *.json
+recursive-include code/reagent_sequence_file *.json
+recursive-include code/logo *.png
+include code/LOGO.png
+recursive-include docs *.md

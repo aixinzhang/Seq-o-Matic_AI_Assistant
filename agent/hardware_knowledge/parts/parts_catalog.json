@@ -1,0 +1,150 @@
+[
+  {
+    "part": "Ismatec pump tubing",
+    "diameter_mm": 0.51,
+    "vendor": "vwr",
+    "sku": "MFLX95723-18",
+    "url": "https://www.vwr.com/us/en/product/NA5144335/masterflex-ismatec-pump-tubing-2-stop-microbore-pharmed-bpt-avantor",
+    "notes": "Replace every 500 hours of use"
+  },
+  {
+    "part": "Ismatec pump",
+    "vendor": "Masterflex",
+    "sku": "MFLX78018-10",
+    "url": "original pump ismatec ISM930C discontinued",
+    "notes": "If you change to different version, you may need to reprogram pump functions based on manual"
+  },
+  {
+    "part": "Elveflow MUX selector valve",
+    "vendor": "Darwin Fluidics",
+    "sku": "LVF-MUX-D-12",
+    "url": "https://darwin-microfluidics.com/products/microfluidic-flow-switch-distributor?sku=LVF-MUX-D-12",
+    "notes": "Order with 1/16 fittings"
+  },
+  {
+    "part": "Bioptech Tri-imaging chamber base plate",
+    "vendor": "Bioptech",
+    "sku": "200903-03",
+    "url": "Please contact bioptech sale sales@bioptechs.com",
+    "notes": "Controlled via NI DAQ analog/digital IO"
+  },
+  {
+    "part": "Bioptech Sample prep top",
+    "vendor": "Bioptech",
+    "sku": "91603-1616",
+    "url": "Please contact bioptech sale sales@bioptechs.com",
+    "notes": "For Barseq lib prep top"
+  },
+  {
+    "part": "Bioptech Sample prep base",
+    "vendor": "Bioptech",
+    "sku": "91603-0302",
+    "url": "Please contact bioptech sale sales@bioptechs.com",
+    "notes": "For Barseq lib prep base"
+  },
+  {
+    "part": "non-coated microaqueduct slide for sample prep chamber",
+    "vendor": "Bioptech",
+    "sku": "130119-5-200903-NC",
+    "url": "Please contact bioptech sale sales@bioptechs.com",
+    "notes": "For Barseq lib prep top non-coast chamber"
+  },
+  {
+    "part": "ITO perfusion slides",
+    "vendor": "Bioptech",
+    "sku": "130119-5-200903",
+    "url": "Please contact bioptech sale sales@bioptechs.com",
+    "notes": "ITO coasted slide"
+  },
+  {
+    "part": "Silicone gaskets upper 0.75mm",
+    "vendor": "Bioptech",
+    "sku": "1907-R22982B-750",
+    "url": "Please contact bioptech sale sales@bioptechs.com",
+    "notes": "spacer for metal circuit top with ito slide"
+  },
+  {
+    "part": "silicone gaskets perfusion 0.25mm",
+    "vendor": "Bioptech",
+    "sku": "1907-R22982A-250",
+    "url": "Please contact bioptech sale sales@bioptechs.com",
+    "notes": "spacer inside tissue slide and ito slide, 1ml to fill the chamber"
+  },
+  {
+    "part": "silicone gaskets perfusion 0.50mm",
+    "vendor": "Bioptech",
+    "sku": "1907-R22982A-500",
+    "url": "Please contact bioptech sale sales@bioptechs.com",
+    "notes": "spacer inside tissue slide and ito slide, 2ml to fill the chamber"
+  },
+  {
+    "part": "Delta T dish controller",
+    "vendor": "Bioptech",
+    "sku": "0420-4-03",
+    "url": "Please contact bioptech sale sales@bioptechs.com",
+    "notes": "please check manual Delta_T_Controller S5 Heater manual in manuals folder"
+  },
+  {
+    "part": "DAQ USB-6003",
+    "vendor": "National Instrument",
+    "sku": "782608-01",
+    "url": "https://www.ni.com/en-us/shop/model/usb-6003.html",
+    "notes": "control bioptech heater through I/O"
+  },
+  {
+    "part": "VacuTight Ferrule ETFE 1/16 Red",
+    "vendor": "idex",
+    "sku": "P-840",
+    "url": "https://www.idex-hs.com/store/product-detail/vacutight_ferrule_tefzel_etfe_1_16_red/p-840",
+    "notes": "tube connector ferrule"
+  },
+  {
+    "part": "VacuTight Fittings 1/4-28, 1/16",
+    "vendor": "Cole parmer",
+    "sku": "EW-02017-61",
+    "url": "https://www.coleparmer.com/i/idex-vacutight-fitting-natural-peek-1-16-od-tubing-1-4-28-flat-bottom-1-ea/0201761",
+    "notes": "tube connector, work with ferrule"
+  },
+  {
+    "part": "soft to hard wall tubing adaptor (0.5mm tubing)",
+    "vendor": "idex",
+    "sku": "P-794",
+    "url": "https://www.idex-hs.com/store/product-detail/conical_adapter_assembly_to_connect_rigid_walled_tubing_to_soft_walled_tubing_connects_1_16_od_rigid_walled_tubing_to_0_020_0_030_id_peristaltic_tubing/p-794",
+    "notes": "soft tube connector"
+  },
+  {
+    "part": "0.5mm ID fluidics tubing",
+    "vendor": "idex",
+    "sku": "1516XL",
+    "url": "https://www.idex-hs.com/store/product-detail/tefzel_etfe_tubing_1_16_od_x_020_id_natural_100ft/1516xl",
+    "notes": "the tubes for ALL in-chamber line"
+  },
+  {
+    "part": "1mm ID fluidics tubing",
+    "vendor": "idex",
+    "sku": "1517L",
+    "url": "https://www.idex-hs.com/store/product-detail/tefzel_etfe_tubing_1_16_od_x_040_id_natural_50ft/1517l",
+    "notes": "the tubes for ALL out-chamber line"
+  },
+  {
+    "part": "bulkhead union assembly",
+    "vendor": "idex",
+    "sku": "P-441",
+    "url": "https://www.idex-hs.com/store/product-detail/bulkhead_union_assembly_peek_1_4_28_red/p-441",
+    "notes": ""
+  },
+  {
+    "part": "4 way splitter (cross assembly)",
+    "vendor": "idex",
+    "sku": "P-722",
+    "url": "https://www.idex-hs.com/store/product-detail/cross_assembly_peek_020in_thru_hole/p-722",
+    "notes": "4 way splitter between selector and pump"
+  },
+  {
+    "part": "3 way splitter (Y assembly)",
+    "vendor": "idex",
+    "sku": "P-514",
+    "url": "https://www.idex-hs.com/store/product-detail/y_assembly_peek_1_4_28_060in/p-514",
+    "notes": "3 way splitter between selector and pump"
+  }
+]

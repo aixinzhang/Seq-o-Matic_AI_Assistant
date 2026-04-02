@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "seq-o-matic"
+version = "2.5.0"
+description = "Automated laboratory platform for spatial transcriptomics sequencing"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Aixin Zhang"},
+]
+requires-python = ">=3.9"
+dependencies = [
+    "pyserial>=3.5",
+    "numpy>=1.21",
+    "pandas>=1.3",
+    "opencv-python>=4.5",
+    "matplotlib>=3.4",
+    "Pillow>=9.0",
+    "tifffile>=2021.7",
+    "scikit-image>=0.18",
+    "pytz>=2021.1",
+    "nidaqmx>=0.6",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "mypy>=1.0",
+]
+
+[project.scripts]
+seq-o-matic = "seq_o_matic.mainwindow:main"
+
+[project.urls]
+Homepage = "https://github.com/BarseqLab/Seq_o_matics"
+Repository = "https://github.com/BarseqLab/Seq_o_matics"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["seq_o_matic*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["seq_o_matic"]
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true

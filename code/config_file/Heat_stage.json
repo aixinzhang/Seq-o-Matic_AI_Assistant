@@ -1,0 +1,3 @@
+[{"heat_stage": "heatstage1", "do_port": "port1", "do_line": "line0","ai_line":"ai0","DAQ":"Dev2","ao_port":"ao0"},
+{"heat_stage": "heatstage2", "do_port": "port1", "do_line": "line1","ai_line":"ai1","DAQ":"Dev2","ao_port":"ao0"},
+{"heat_stage": "heatstage3", "do_port": "port1", "do_line": "line2","ai_line":"ai3","DAQ":"Dev2","ao_port":"ao0"}]

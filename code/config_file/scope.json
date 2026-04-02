@@ -1,0 +1,20 @@
+[{"scope_name":"Alder",
+"piezo":1,
+"ZDrive_safe_pos":11.3,
+"XYStage_fluidics_safe_pos":[56556,-8095],
+"XYStage_image_safe_pos":[44951, -5484],
+"scope_exposure_time_dict":{"G": 60, "T": 30, "A": 20, "C": 40, "DIC": 20, "Hyb-GFP": 100, "Hyb-YFP": 30, "Hyb-TxRed": 30, "Hyb-Cy5":20, "Hyb-DAPI": 20, "C-focus": 20, "Hyb-TxRed-focus": 20},
+"z_dir":-1,
+"stage_x_dir":-1,
+"stage_y_dir":1,
+"pixel_size":0.33,
+"imwidth":3200,
+"overlap":10,
+"geneseq_focus_target_channel":"Hyb-DAPI",
+"Hyb_focus_target_channel":"Hyb-DAPI",
+"maxproject_drive":"M:\\",
+"align_channel":"Hyb-DAPI"}
+]
+
+
+

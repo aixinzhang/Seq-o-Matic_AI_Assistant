@@ -1,0 +1,6 @@
+[{"volume":4.0,"source":"8","flow_rate":1.5,"time":null,"temperature":null,"Solution name":"STRIP","device":"pump"},
+{"volume":0,"source":null,"flow_rate":null,"time":300,"temperature":null,"Solution name":"STRIP Buffer heat Wait","device":"heat_device"},
+{"volume":4,"source":"8","flow_rate":1.5,"time":null,"temperature":null,"Solution name":"STRIP","device":"pump"},
+{"volume":0,"source":null,"flow_rate":null,"time":300,"temperature":null,"Solution name":"STRIP Buffer heat Wait","device":"heat_device"},
+{"volume":4,"source":"8","flow_rate":1.5,"time":null,"temperature":null,"Solution name":"STRIP","device":"pump"},
+{"volume":0,"source":null,"flow_rate":null,"time":300,"temperature":null,"Solution name":"STRIP Buffer heat Wait","device":"heat_device"}]

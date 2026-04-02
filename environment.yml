@@ -1,0 +1,28 @@
+name: seq-o-matic-agent
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python==3.10.13
+  - pyserial==3.5
+  - numpy==1.26.0
+  - pandas==1.5.3
+  - opencv>=4.5
+  - matplotlib==3.5.3
+  - pillow>=9.0
+  - tifffile>=2021.7
+  - scikit-image==0.20.0
+  - pytz>=2021.1
+  - pyzmq>=22.0
+  - dask>=2021.10
+  - tk
+  - pip
+  - pip:
+    - nidaqmx==0.9.0
+    - docstring-inheritance>=1.0
+    - sortedcontainers>=2.4
+    - pymmcore>=11.1
+    # AI Agent dependencies
+    - anthropic>=0.39.0
+    - chromadb>=0.5.0
+    - pymupdf>=1.23.0

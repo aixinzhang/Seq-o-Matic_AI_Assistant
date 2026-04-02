@@ -1,0 +1,6 @@
+[{"volume":5,"source":"7","flow_rate":1.5,"time":null,"temperature":null,"Solution name":"FISH WASH","device":"pump"},
+{"volume":1,"source":"12","flow_rate":1.5,"time":null,"temperature":null,"Solution name":"gene primer mix","device":"pump"},
+{"volume":0,"source":null,"flow_rate":null,"time":120,"temperature":null,"Solution name":"gene primer mix incubation Wait","device":"heat_device"},
+{"volume":0,"source":null,"flow_rate":null,"time":600,"temperature":null,"Solution name":"gene primer mix incubation Wait","device":"wait"},
+{"volume":3,"source":"7","flow_rate":1.5,"time":null,"temperature":null,"Solution name":"FISH WASH","device":"pump"},
+{"volume":0,"source":"14","flow_rate":null,"time":null,"temperature":null,"Solution name":"Empty End","device":"stopper"}]
