@@ -1,7 +1,7 @@
 # Seq-o-Matic AI Agent
 
 **AI-powered assistant for the Seq-o-Matic laboratory automation system.**
-
+The laboratory automation system is published https://github.com/BarseqLab/Seq_o_matics
 An intelligent agent that can answer questions about hardware, software, and troubleshooting -- and optionally control lab equipment via natural language.
 
 ![Agent Demo](agent_demo.png)
